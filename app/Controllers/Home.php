@@ -43,7 +43,7 @@ class Home extends BaseController
 	public function usermenu()
 	{
 		$data = [
-			'title' => 'Usermenu'
+			'title' => 'User Menu'
 		];
 		return view('user/user-menu', $data);
 	}

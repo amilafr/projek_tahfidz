@@ -1,6 +1,7 @@
-<?= $this->extend('view-template/template'); ?>
+<?= $this->extend('view-template/template-user'); ?>
 
 <?= $this->section('content'); ?>
-<h1><?=$title;?></h1>
+
+
 
 <?= $this->endSection(); ?>
