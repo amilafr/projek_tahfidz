@@ -17,19 +17,11 @@ class Home extends BaseController
 			'title' => 'Register'
 		];
 		return view('user/register', $data);
-	}
-	public function baca()
-	{
-		$data = [
-			'title' => 'Baca Al-Quran'
-		];
-		return view('user/baca-quran', $data);
-	}
-	
+	}	
 	public function surat()
 	{
 		$data = [
-			'title' => 'List Surat'
+			'title' => "Surat Al-Qur'an"
 		];
 		return view('user/list-surat', $data);
 	}
@@ -40,12 +32,12 @@ class Home extends BaseController
 		];
 		return view('user/login', $data);
 	}
-	public function usermenu()
+	public function profil()
 	{
 		$data = [
-			'title' => 'User Menu'
+			'title' => 'Profil'
 		];
-		return view('user/user-menu', $data);
+		return view('user/profil', $data);
 	}
 	public function dashboard()
 	{
@@ -53,5 +45,27 @@ class Home extends BaseController
 			'title' => 'Dashboard'
 		];
 		return view('user/dashboard', $data);
+	}
+	public function hafalan()
+	{
+		$data = [
+			'title' => 'Hafalan'
+		];
+		return view('user/hafalan', $data);
+	}
+	public function murojaah()
+	{
+		$data = [
+			'title' => "Muroja'ah"
+		];
+		return view('user/murojaah', $data);
+	}
+	public function detailsurat($number)
+	{
+		$data = [
+			'title' => "Surat Al-Qur'an",
+			'no_surat' => $number
+		];
+		return view('user/detail-surat', $data);
 	}
 }

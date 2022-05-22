@@ -12,11 +12,11 @@
     <title><?= $title; ?></title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="<?=base_url()?>/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="<?=base_url()?>/css/sb-admin-2.min.css" rel="stylesheet" type="text/css" media="screen">
 
 </head>
 
@@ -37,10 +37,20 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="/dashboard">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <i class="fa fa-home"></i>
                     <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item -->
+            <li class="nav-item">
+                <a class="nav-link" href="/list-surat">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Surat Al-Qur'an</span></a>
             </li>
 
             <!-- Divider -->
@@ -53,26 +63,21 @@
 
             <!-- Nav Item -->
             <li class="nav-item">
-                <a class="nav-link" href="user-menu">
-                    <i class="fas fa-fw fa-table"></i>
+                <a class="nav-link mb-0" href="/profil">
+                    <i class="fa fa-user"></i>
                     <span>Profil</span></a>
             </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
-
-            <!-- Nav Item -->
             <li class="nav-item">
-                <a class="nav-link" href="/baca-quran">
-                    <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Baca Qur'an</span></a>
+                <a class="nav-link" href="/hafalan">
+                    <i class="fa fa-book"></i>
+                    <span>Hafalan</span></a>
             </li>
 
-            <!-- Nav Item -->
             <li class="nav-item">
-                <a class="nav-link" href="/list-surat">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>List Surat</span></a>
+                <a class="nav-link" href="/murojaah">
+                    <i class="fa fa-bookmark"></i>
+                    <span>Muroja'ah</span></a>
             </li>
 
             <!-- Divider -->
@@ -129,7 +134,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                                <img class="img-profile rounded-circle" src="<?=base_url()?>/img/undraw_profile.svg">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -211,21 +216,21 @@
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="<?=base_url()?>/vendor/jquery/jquery.min.js"></script>
+    <script src="<?=base_url()?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="<?=base_url()?>/vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="<?=base_url()?>/js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="<?=base_url()?>/vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="<?=base_url()?>/js/demo/chart-area-demo.js"></script>
+    <script src="<?=base_url()?>/js/demo/chart-pie-demo.js"></script>
 
 </body>
 

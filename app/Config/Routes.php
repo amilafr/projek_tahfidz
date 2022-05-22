@@ -32,12 +32,17 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/baca-quran', 'Home::baca');
-$routes->get('/dashboard', 'Home::dashboard');
+
 $routes->get('/register', 'Home::register');
-$routes->get('/list-surat', 'Home::surat');
 $routes->get('/login', 'Home::login');
-$routes->get('/user-menu', 'Home::usermenu');
+
+$routes->get('/dashboard', 'Home::dashboard');
+$routes->get('/profil', 'Home::profil');
+$routes->get('/hafalan', 'Home::hafalan');
+$routes->get('/murojaah', 'Home::murojaah');
+
+$routes->get('/list-surat', 'Home::surat');
+$routes->get('/list-surat/(:num)', 'Home::detailsurat/$1');
 
 /*
  * --------------------------------------------------------------------
