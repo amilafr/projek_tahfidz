@@ -4,6 +4,35 @@
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Rekap Muroja'ah Terakhir</h6>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Tanggal</th>
+                    <th>Surat</th>
+                    <th>Ayat Terakhir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tiger Nixon</td>
+                    <td>System Architect</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-primary btn-icon-split">
+                <span class="text">Lanjut Muroja'ah</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">Data Rekap Muroja'ah</h6>
     </div>
     <div class="card-body">
@@ -11,22 +40,16 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Position</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
+                        <th>No.</th>
+                        <th>Tanggal</th>
+                        <th>Surat</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
+                        <td>1</td>
                         <td>Tiger Nixon</td>
                         <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
                     </tr>
                 </tbody>
             </table>
